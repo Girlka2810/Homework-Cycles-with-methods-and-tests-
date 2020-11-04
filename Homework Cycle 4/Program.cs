@@ -12,7 +12,7 @@ namespace Homework_Cycle_4
             Console.WriteLine("Введите число:");
             int a = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("Наибольший делитель числа " + a);
-            int nod = Cycles.FindNOD.ShowNOD(a);
+            int nod = Cycles.CyclesMethods.FindNOD(a);
             Console.WriteLine("Наибольший делитель: "+nod);
         }
     }

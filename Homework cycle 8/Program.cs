@@ -12,7 +12,7 @@ namespace Homework_cycle_8
             Console.WriteLine("Введите целое положительное число N");
             Console.Write("N= ");
             double n = Convert.ToInt32(Console.ReadLine());
-            double coubicroot = Cycles.FindCubicRoot.SolutionOfCubicRoot(n);
+            double coubicroot = Cycles.CyclesMethods.FindCubicRoot(n);
             Console.Write("Result: ");
             Console.WriteLine(coubicroot);
         }

@@ -15,7 +15,7 @@ namespace Homework_Cycle_7
             Console.WriteLine("Введите второе число");
             Console.Write("B= ");
             int b = Convert.ToInt32(Console.ReadLine());
-            string result = Cycles.AlgorithmEvklida.SolutionOfEvklid(a, b);
+            string result = Cycles.CyclesMethods.SolveAlgorithmEvklida(a, b);
             Console.WriteLine(result);
         }
     }

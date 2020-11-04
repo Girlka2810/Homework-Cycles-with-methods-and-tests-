@@ -14,7 +14,7 @@ namespace Homework_Cycle_12
             int a = Convert.ToInt32(Console.ReadLine());
             Console.Write("Введите 2-ое число: ");
             int b = Convert.ToInt32(Console.ReadLine());
-            string result = Cycles.FindTheSameNumber.InformAboutSameNumber(a, b);
+            string result = Cycles.CyclesMethods.FindTheSameNumber(a, b);
             Console.WriteLine(result);
             }
         }

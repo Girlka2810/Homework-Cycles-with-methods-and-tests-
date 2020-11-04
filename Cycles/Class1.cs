@@ -2,9 +2,9 @@
 
 namespace Cycles
 {
-    public class RaiseAintoB
+    public class CyclesMethods
     {
-        public static int PowerA(int a, int b)
+        public static int RaiseAintoB(int a, int b)
         {
             int c = 1;
             for (int i = 0; i < b; i++)
@@ -13,10 +13,8 @@ namespace Cycles
             }
             return c;
         }
-    }
-    public class FindNumbersDivededInrange1To1000OnEnteredNumber
-    {
-        public static string ShowNumbers(int a)
+   
+        public static string FindNumbersDivededInrange1To1000OnEnteredNumber(int a)
         {
             string num = "";
             for (int i = 1; i <= 1000; i += 1)
@@ -32,10 +30,8 @@ namespace Cycles
             }
             return num;
         }
-    }
-    public class FindNumbersPowLessThanA
-    {
-        public static int QuantityOfNumbers (int a)
+   
+        public static int FindQuantityOfNumbersWhichPowLessThanA (int a)
         {
            int count = 0;
             for (int i = 1; i * i <= a; i += 1)
@@ -44,10 +40,8 @@ namespace Cycles
             }
             return count;
         }
-    }
-    public class FindNOD
-    {
-        public static int ShowNOD (int a)
+    
+        public static int FindNOD (int a)
         {
             int nod = 0;
             for (int i = 1; i < a; i += 1)
@@ -57,10 +51,8 @@ namespace Cycles
             }
             return nod;
         }
-    }
-    public class FindQuantityOfAllNumbersInRangeAToBDevidedTo7
-    {
-        public static string SumOfNumbersDevidedTo7(int a, int b)
+    
+        public static string FindQuantityOfAllNumbersInRangeAToBDevidedTo7(int a, int b)
         {
             int sum = 0;
             {
@@ -86,10 +78,8 @@ namespace Cycles
             }
             return c;
         }
-    }
-    public class FindFibonachiNumber
-    {
-        public static string FibonachiNumber (int Nfibo)
+    
+        public static string FindFibonachiNumber (int Nfibo)
         {
             int fibo1 = 1;
             int fibo2 = 1;
@@ -101,10 +91,8 @@ namespace Cycles
             string result =($"{Nfibo}-ое число ряда Фибоначчи: " + fibo2);
             return result;
         }
-    }
-    public class AlgorithmEvklida
-    {
-        public static string SolutionOfEvklid(int a, int b)
+    
+        public static string SolveAlgorithmEvklida(int a, int b)
         {
             int a1 = a;
             int b1 = b;
@@ -118,10 +106,8 @@ namespace Cycles
             string result = ($"Наибольший делитель чисел {a1} и {b1} : {Math.Max(a, b)} ");
             return result;
         }
-    }
-    public class FindCubicRoot
-    {
-        public static double SolutionOfCubicRoot(double n)
+    
+        public static double FindCubicRoot(double n)
         {
             double rightBoarder = n;
             double leftBoarder = 0;
@@ -144,9 +130,7 @@ namespace Cycles
             }
             return midPoint;
         }
-    }
-    public class OddNumberInNumber
-    {
+    
         public static int FindQuantOfOddNumber (int a)
         {
            int oddNum = 0;
@@ -162,10 +146,8 @@ namespace Cycles
             }
             return oddNum;
         }
-    }
-    public class MirrorSort
-    {
-        public static int ChangePositionsOfNum(int a)
+    
+        public static int SortMirror(int a)
         {
             int b = 0;
             while (a != 0)
@@ -175,10 +157,8 @@ namespace Cycles
             }
             return b;
         }
-    }
-    public class SumOfEvenNumberBigerThanSumOfOddNum
-    {
-        public static int SumEvenNumMore(int currentValue)
+    
+        public static int FindSumOfEvenNumberBigerThanSumOfOddNum(int currentValue)
         {
             int oddNumberCount = 0;
             int evenNumberCount = 0;
@@ -204,10 +184,8 @@ namespace Cycles
             }
             return x;
         }
-    }
-    public class FindTheSameNumber
-    {
-        public static string InformAboutSameNumber (int a, int b)
+   
+        public static string FindTheSameNumber (int a, int b)
         {
             string s="No";
             int temp = b;

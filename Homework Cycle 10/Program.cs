@@ -13,7 +13,7 @@ namespace Homework_Cycle_10
             Console.WriteLine("Введите  число ");
             Console.Write("A= ");
             int a = Convert.ToInt32(Console.ReadLine());
-            int b = Cycles.MirrorSort.ChangePositionsOfNum(a);
+            int b = Cycles.CyclesMethods.SortMirror(a);
             Console.WriteLine($"Число {a} в обратном порядке: {b}");
         }
     }

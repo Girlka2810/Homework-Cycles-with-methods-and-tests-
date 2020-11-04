@@ -12,7 +12,7 @@ namespace Homework_Cycle_11
             Console.WriteLine("Сумма четных цифр больше суммы нечетных");
             Console.WriteLine("Введите целое положительное число");
             int currentValue = Convert.ToInt32(Console.ReadLine());
-            int x = Cycles.SumOfEvenNumberBigerThanSumOfOddNum.SumEvenNumMore(currentValue);
+            int x = Cycles.CyclesMethods.FindSumOfEvenNumberBigerThanSumOfOddNum(currentValue);
             Console.WriteLine($"Количество количество чисел в диапазоне от 1 до {currentValue} сумма четных цифр которых больше суммы нечетных равно {x}");
         }   
     }

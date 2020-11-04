@@ -12,7 +12,7 @@ namespace Homework_cycle_2
             Console.WriteLine("Введите число:");
             a = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Числа от 1 до 1000, которые делятся на: " + a);
-            string b = Cycles.FindNumbersDivededInrange1To1000OnEnteredNumber.ShowNumbers(a);
+            string b = Cycles.CyclesMethods.FindNumbersDivededInrange1To1000OnEnteredNumber(a);
             Console.WriteLine(b);
                 }
     }

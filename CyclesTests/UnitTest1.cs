@@ -11,7 +11,7 @@ namespace CyclesTests
         [TestCase(11, 2, 121)]
         public void PowerATest(int a,int b, int expected)
         {
-            int actual = Cycles.RaiseAintoB.PowerA(a, b);
+            int actual = Cycles.CyclesMethods.RaiseAintoB(a, b);
             Assert.AreEqual(actual, expected);
         }
 
@@ -22,7 +22,7 @@ namespace CyclesTests
         [TestCase(100, "100  200  300  400  500  600  700  800  900  1000  ")]
         public void FindingNumbersTest (int a, string expected)
         {
-            string actual = Cycles.FindNumbersDivededInrange1To1000OnEnteredNumber.ShowNumbers(a);
+            string actual = Cycles.CyclesMethods.FindNumbersDivededInrange1To1000OnEnteredNumber(a);
             Assert.AreEqual(actual, expected);
         }
         [TestCase(2,1)]
@@ -31,7 +31,7 @@ namespace CyclesTests
         [TestCase(25, 5)]
         public void PowLessATest(int a, int expected)
         {
-            int actual = Cycles.FindNumbersPowLessThanA.QuantityOfNumbers(a);
+            int actual = Cycles.CyclesMethods.FindQuantityOfNumbersWhichPowLessThanA(a);
                         Assert.AreEqual(actual, expected);
         }
         [TestCase(100, 50)]
@@ -40,7 +40,7 @@ namespace CyclesTests
         [TestCase(25, 5)]
         public void  NODTest(int a, int expected)
         {
-            int actual = Cycles.FindNOD.ShowNOD(a);
+            int actual = Cycles.CyclesMethods.FindNOD(a);
             Assert.AreEqual(actual, expected);
         }
         [TestCase(10,500, "Сумма чисел в диапозоне от 10 до 500 : 17885")]
@@ -49,7 +49,7 @@ namespace CyclesTests
         [TestCase(0,25, "Сумма чисел в диапозоне от 0 до 25 : 42")]
         public void DevidingTo7Test(int a, int b, string expected)
         {
-            string actual = Cycles.FindQuantityOfAllNumbersInRangeAToBDevidedTo7.SumOfNumbersDevidedTo7(a,b);
+            string actual = Cycles.CyclesMethods.FindQuantityOfAllNumbersInRangeAToBDevidedTo7(a,b);
             Assert.AreEqual(actual, expected);
         }
         [TestCase(10, "10-ое число ряда Фибоначчи: 55")]
@@ -58,7 +58,7 @@ namespace CyclesTests
         [TestCase(25, "25-ое число ряда Фибоначчи: 75025")]
         public void FibonachiTest(int a, string expected)
         {
-            string actual = Cycles.FindFibonachiNumber.FibonachiNumber(a);
+            string actual = Cycles.CyclesMethods.FindFibonachiNumber(a);
             Assert.AreEqual(actual, expected);
         }
         [TestCase(100,5, "Наибольший делитель чисел 100 и 5 : 5 ")]
@@ -67,7 +67,7 @@ namespace CyclesTests
         [TestCase(152,2564, "Наибольший делитель чисел 152 и 2564 : 4 ")]
         public void AlgoritmEvklidaTest(int a,int b, string expected)
         {
-            string actual = Cycles.AlgorithmEvklida.SolutionOfEvklid(a,b);
+            string actual = Cycles.CyclesMethods.SolveAlgorithmEvklida(a,b);
             Assert.AreEqual(actual, expected);
         }
         [TestCase(27, 3.00000062584877)]
@@ -76,7 +76,7 @@ namespace CyclesTests
         [TestCase(725, 8.983508800156415)]
         public void CubicRootTest(double n, double expected)
         {
-            double actual = Cycles.FindCubicRoot.SolutionOfCubicRoot(n);
+            double actual = Cycles.CyclesMethods.FindCubicRoot(n);
             Assert.AreEqual(actual, expected);
         }
         [TestCase(123456,3)]
@@ -85,7 +85,7 @@ namespace CyclesTests
         [TestCase(2574,2)]
         public void OddNumberTest(int a, int expected)
         {
-            double actual = Cycles.OddNumberInNumber.FindQuantOfOddNumber(a);
+            double actual = Cycles.CyclesMethods.FindQuantOfOddNumber(a);
             Assert.AreEqual(actual, expected);
         }
         [TestCase(123,321)]
@@ -94,7 +94,7 @@ namespace CyclesTests
         [TestCase(2574, 4752)]
         public void MirrorSortTest(int a, int expected)
         {
-            int actual = Cycles.MirrorSort.ChangePositionsOfNum(a);
+            int actual = Cycles.CyclesMethods.SortMirror(a);
             Assert.AreEqual(actual, expected);
         }
         [TestCase(23,10 )]
@@ -104,7 +104,7 @@ namespace CyclesTests
         [TestCase(15,6 )]
                 public void SumEvenNumbTest(int a, int expected)
         {
-            int actual = Cycles.SumOfEvenNumberBigerThanSumOfOddNum.SumEvenNumMore(a);
+            int actual = Cycles.CyclesMethods.FindSumOfEvenNumberBigerThanSumOfOddNum(a);
             Assert.AreEqual(actual, expected);
         }
         [TestCase(100, 5, "No")]
@@ -118,7 +118,7 @@ namespace CyclesTests
         [TestCase(98723, 45678, "Yes")]
         public void SameNumbersTest(int a, int b, string expected)
         {
-            string actual = Cycles.FindTheSameNumber.InformAboutSameNumber(a, b);
+            string actual = Cycles.CyclesMethods.FindTheSameNumber(a, b);
             Assert.AreEqual(actual, expected);
         }
     }

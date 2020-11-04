@@ -14,7 +14,7 @@ namespace Homework_Cycle_5
             int a = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Введите второе число");
             int b = Convert.ToInt32(Console.ReadLine());
-            string sum = Cycles.FindQuantityOfAllNumbersInRangeAToBDevidedTo7.SumOfNumbersDevidedTo7(a, b);
+            string sum = Cycles.CyclesMethods.FindQuantityOfAllNumbersInRangeAToBDevidedTo7(a, b);
             Console.WriteLine(sum);
         }
     }

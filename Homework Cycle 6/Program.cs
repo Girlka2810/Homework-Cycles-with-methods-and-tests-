@@ -12,7 +12,7 @@ namespace Homework_Cycle_6
             
             Console.WriteLine("Введите число");
             int Nfibo = Convert.ToInt32(Console.ReadLine());
-            string result = Cycles.FindFibonachiNumber.FibonachiNumber(Nfibo);
+            string result = Cycles.CyclesMethods.FindFibonachiNumber(Nfibo);
             Console.WriteLine(result);
         }
     }

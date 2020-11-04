@@ -10,7 +10,7 @@ namespace Console_Cycle
             int a = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Введите второе число");
             int b = Convert.ToInt32(Console.ReadLine());
-            int c = Cycles.RaiseAintoB.PowerA(a, b);
+            int c = Cycles.CyclesMethods.RaiseAintoB(a, b);
             Console.Write("Результат: ");
             Console.WriteLine(c);
         }
